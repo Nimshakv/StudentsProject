@@ -1,0 +1,77 @@
+#studentTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    table-layout:fixed;
+}
+
+#studentTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#studentTable th,
+#studentTable td {
+    padding: 12px 15px;
+    width: auto !important;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#studentTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+    line-height: 14px;
+}
+
+#studentTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#studentTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#studentTable tbody tr.active-row {
+    font-weight: bold;
+    /* color: #009879; */
+    color: black;
+    background-color: lightgrey;
+}
+
+.container-lg {
+    margin-top: 20px;
+}
+
+#studentTable td .add, a.cancel {
+    display: none;
+}
+
+#studentTable td a.add {
+    color: #27C46B;
+}
+
+#studentTable td a.cancel {
+    color: red;
+}
+
+#studentTable td a.add, a.edit, a.delete, a.cancel {
+    cursor: pointer;
+}
+
+.id-column {
+    display: none;
+}
+
+#studentTable_filter {
+    display: none;
+}
+
+.ui-datepicker-calendar {
+   display: none;
+}
