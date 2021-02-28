@@ -134,7 +134,7 @@ function addOrEditItem(url, pk, params, add_btn){
         else{
             addSuccess(add_btn, data);
         }
-        $(this).parents("tr").find(".add, .edit, .cancel").toggle();
+        add_btn.parents("tr").find(".add, .edit, .cancel").toggle();
         $('.add-new').attr("disabled", false);
       },
       error: function(data){
